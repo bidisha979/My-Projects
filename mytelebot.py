@@ -5,7 +5,7 @@ import requests
 import json
 import random
 
-TOKEN: final = '7071572403:AAH6hq3Ujln3s6SuZDglP9V_FmXWYRByTSk'
+TOKEN: final = 'Your Telegram Token'
 BOT_USERNAME: final = '@myBidisha_TeleRecipeBot'
 
 # COMMANDS
@@ -19,7 +19,7 @@ async def joke_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # API for joke
     url = "https://dad-jokes.p.rapidapi.com/random/joke"
     headers = {
-        "X-RapidAPI-Key": "ff17d969bdmshef77559f7c6243ep1831a6jsndc1366e36136",
+        "X-RapidAPI-Key": "API KEY",
         "X-RapidAPI-Host": "dad-jokes.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers)
@@ -31,7 +31,7 @@ async def fetch_random_image(query: str) -> str:
     url = f"https://google-api31.p.rapidapi.com/imagesearch"
     headers = {
         "content-type": "application/json",
-        "X-RapidAPI-Key": "ff17d969bdmshef77559f7c6243ep1831a6jsndc1366e36136",
+        "X-RapidAPI-Key": "API KEY",
         "X-RapidAPI-Host": "google-api31.p.rapidapi.com"
     }
     payload = {
@@ -75,7 +75,7 @@ async def recipe_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # API for recipe
     url = f'https://api.api-ninjas.com/v1/recipe?query={query}'
-    headers = {'X-Api-Key': 'mbCjvr3zNE/P73W7PBru6Q==yE9WTRgejVuz0uTJ'}
+    headers = {'X-Api-Key': 'API KEY'}
     response = requests.get(url, headers=headers)
 
     if response.status_code == requests.codes.ok:
