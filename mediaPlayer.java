@@ -11,7 +11,7 @@ public class AudioPlayer {
         String response = "";
 
         Map<String, String> arr = new HashMap<>();
-        arr.put("BHALOBASHAR MORSHUM", "C:/Users/Bidisha/Downloads/1-Bhalobashar-Morshum(PagalWorld).wav");
+        arr.put("BHALOBASAR MORSHUM", "C:/Users/Bidisha/Downloads/1-Bhalobashar-Morshum(PagalWorld).wav");
 
         System.out.println("Enter audio Name: ");
         String AudioName = sc.nextLine();
